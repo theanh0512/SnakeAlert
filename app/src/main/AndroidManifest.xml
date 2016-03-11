@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,11 +32,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name=".activities.DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
         <activity
-            android:name=".ListOfSnakesActivity"
+            android:name=".activities.ListOfSnakesActivity"
             android:label="@string/title_activity_list_of_snakes" >
         </activity>
 
@@ -48,23 +48,23 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".activities.MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
         <activity
-            android:name=".CaptureImageActivity"
+            android:name=".activities.CaptureImageActivity"
             android:label="@string/title_activity_capture_image" >
         </activity>
         <activity
-            android:name=".UploadActivity"
+            android:name=".activities.UploadActivity"
             android:label="@string/title_activity_upload" >
         </activity>
         <activity
-            android:name=".HelpActivity"
+            android:name=".activities.HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
         <activity
-            android:name=".FirstAidActivity"
+            android:name=".activities.FirstAidActivity"
             android:label="@string/title_activity_first_aid" >
         </activity>
     </application>
