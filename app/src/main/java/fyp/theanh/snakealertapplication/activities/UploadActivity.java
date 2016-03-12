@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ import fyp.theanh.snakealertapplication.R;
 import fyp.theanh.snakealertapplication.models.SnakeKind;
 
 
-public class UploadActivity extends ActionBarActivity {
+public class UploadActivity extends FragmentActivity {
     public static List<SnakeKind> snakeKinds = new ArrayList<SnakeKind>();
     public static ImageAdapter mSnakeKindImageAdapter;
     public String mCurrentPhotoPath;

@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity {
 
         private void getData() {
             GetDataTask dataTask = new GetDataTask(this.getActivity(),
-                    FragmentMain.mSnakeAdapter);
+                    FragmentMain.mSnakeAdapter,FragmentMain.mAdapter);
             dataTask.execute();
         }
 

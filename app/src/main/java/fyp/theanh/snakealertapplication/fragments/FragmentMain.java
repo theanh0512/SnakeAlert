@@ -15,6 +15,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import fyp.theanh.snakealertapplication.CustomList;
 import fyp.theanh.snakealertapplication.tasks.GetDataTask;
 import fyp.theanh.snakealertapplication.R;
 import fyp.theanh.snakealertapplication.activities.DetailActivity;
@@ -32,6 +33,7 @@ import fyp.theanh.snakealertapplication.models.Snake;
 public class FragmentMain extends Fragment {
 
     public static ArrayAdapter<String> mSnakeAdapter;
+    public static CustomList mAdapter;
     // TODO: Rename parameter arguments, choose names that match
 
     // Array of strings... for testing
@@ -61,9 +63,10 @@ public class FragmentMain extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         mSnakeAdapter = new ArrayAdapter<String>(getActivity(), R.layout.activity_snake_listview,
                 snakeArray);
+        mAdapter = new CustomList(getActivity(),snakeArray);
 
         ListView listView = (ListView) rootView.findViewById(R.id.snakes_list);
-        listView.setAdapter(mSnakeAdapter);
+        listView.setAdapter(mAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -84,7 +87,7 @@ public class FragmentMain extends Fragment {
 
     @Override
     public void onStart() {
-        GetDataTask dataTask = new GetDataTask(this.getActivity(), mSnakeAdapter);
+        GetDataTask dataTask = new GetDataTask(this.getActivity(), mSnakeAdapter, mAdapter);
         dataTask.execute();
         super.onStart();
     }

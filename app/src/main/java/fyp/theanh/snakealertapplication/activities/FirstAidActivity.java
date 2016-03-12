@@ -1,5 +1,6 @@
 package fyp.theanh.snakealertapplication.activities;
 
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -14,7 +15,7 @@ import android.os.Build;
 import fyp.theanh.snakealertapplication.R;
 
 
-public class FirstAidActivity extends ActionBarActivity {
+public class FirstAidActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

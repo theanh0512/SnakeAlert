@@ -32,10 +32,12 @@ public class GetDataTask extends AsyncTask<String, Void, List<String>> {
     String mUrlString = "http://www.snakealertapp.com/query_snake_table.php";
     private final Context mcontext;
     private ArrayAdapter<String> mSnakeAdapter;
+    private ArrayAdapter<String> mAdapter;
 
-    public GetDataTask(Context context, ArrayAdapter<String> snakeAdapter) {
+    public GetDataTask(Context context, ArrayAdapter<String> snakeAdapter, ArrayAdapter<String> adapter) {
         mcontext = context;
         mSnakeAdapter = snakeAdapter;
+        mAdapter = adapter;
     }
 
     public GetDataTask(Context context, String urlString) {
@@ -102,7 +104,7 @@ public class GetDataTask extends AsyncTask<String, Void, List<String>> {
                     double latitude = json.getDouble("latitude");
                     double longitude = json.getDouble("longitude");
                     String separatedName = separateName(name);
-                    s = s + "Name : " + separatedName + "  Found at " + location;
+                    s = s + "Name : " + separatedName + "\nFound at " + location+","+imagePath;
                     snakeArray.add(s);
                     FragmentMain.snakeList.add(new Snake(name, location, specification, firstAid, imagePath, latitude, longitude));
                 } else {
@@ -119,11 +121,12 @@ public class GetDataTask extends AsyncTask<String, Void, List<String>> {
     @Override
     protected void onPostExecute(List<String> strings) {
         if (strings != null && mSnakeAdapter !=
-                null) {
+                null&&mAdapter!=null) {
             mSnakeAdapter.clear();
+            mAdapter.clear();
             for (String snakeStr : strings) {
-
-                mSnakeAdapter.add(snakeStr);
+                mAdapter.add(snakeStr);
+                //mSnakeAdapter.add(snakeStr);
             }
             // New data is back from the server.  Hooray!
 

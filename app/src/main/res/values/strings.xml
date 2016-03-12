@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail">Snake Detail</string>
-    <string name="title_activity_list_of_snakes">List Of Snakes</string>
+    <string name="title_activity_list_of_snakes">List Of Snake Incidents</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_capture_image">Capture Snake Image</string>
     <string name="title_activity_upload">Upload</string>
@@ -19,11 +19,63 @@
         \n\n3. Click Map button to see the map of reported snakes.
         \n\n4. Click First Aid button to see General first aid for snake bites.</string>
     <string name="title_activity_first_aid">First Aid</string>
-    <string name="first_aid"> 1. Remain calm and move beyond the snake\'s striking distance.
-        \n2. Remove jewelry and tight clothing before you start to swell.
-        \n3. Position yourself, if possible, so that the bite is at or below the level of your
-        heart.
-        \n4. Clean the wound, but don\'t flush it with water. Cover it with a clean,
-        dry dressing.</string>
-
+    <string name="first_aid_1">
+        1. <b>Call emergency services or shout out for help.</b> If you are alone but can move safely, go for help. Most snake bites aren\'t dangerous, but when you do get bitten by a venomous snake, getting medical care as soon as possible is imperative.
+        First responders will know the types of snakes found in the area and will be best equipped for the most appropriate treatment. Either call paramedics or get to an emergency room right away.
+        \n\t+ You will not necessarily be able to determine if a snake bite is from a venomous snake by just looking at the bite. It is best to get medical help right away, no matter what the bite looks like.
+        \n\t+ Remain as calm as possible. Panic will increase your heart rate and if the snake is venomous, the increased heart rate will just spread the venom through your body faster. Try and stay as calm and quiet as possible.
+        \n\t+ If you\'re able to, call 995 for advice while you wait.</string>
+    <string name="first_aid_2">
+        2. <b>Take note of the snake\'s appearance.</b> First responders and emergency physicians will need the description in order to determine if the snake was venomous. If possible, get a picture of the snake or at least have a fellow hiker
+        also take a mental picture of the snake to verify what you\'ve seen.
+        \n\t+ Don\'t try to catch the snake-- snakes are very fast and unless you are an experienced snake catcher, they have the advantage.
+        \n\t+ Don\'t walk toward the snake or spend a lot of time trying to get a better look at it if you are still in harm\'s way. This is not safe. Simply look at the snake quickly and then move away.
+    </string>
+    <string name="first_aid_3">
+        3. <b>Move away from the snake.</b> You should immediately get out of the snake\'s range, so you don\'t get bitten a second time. Get to a safe spot a fair distance away from the site where the bite occurred.
+        However, do not run away or move too far. Your heart will start pumping faster if you move too quickly, spreading the venom more quickly through your body.
+        \n\t+ Move to a place where the snake is not likely to return. Find a flat boulder a bit above the path, a clearing, or another area without a lot of hiding places for snakes.
+        \n\t+ Try to remain as still as possible once you have reached a safer area.
+    </string>
+    <string name="first_aid_4">
+        4. <b>Immobilize and support the area of the bite.</b> Do not apply a tourniquet but do restrict movement in the bitten area. Also keep the area at or below the level of your heart. This will help make sure that if it was a venomous
+        snake the spread of the venom is slowed down.
+        \n\t+ Keeping the bitten part of you below the level of your heart slows down the flow of any affected blood towards the heart, which would then pump the venom throughout your body.
+        \n\t+ If you can, fashion a splint to keep the area surrounding the bite from moving. Use sticks or boards and place them on either side of the bite area. Then tie a piece of cloth at the bottom, middle, and top of the boards to keep them in place.
+    </string>
+    <string name="first_aid_5">
+        5. <b>Remove clothing, jewelry, or constricting items.</b> Bites from venomous snakes can cause rapid and severe swelling. Even a loose piece of clothing can become too tight as the bite area swells.
+    </string>
+    <string name="first_aid_6">
+        6. <b>Clean the wound as best as you can, but don\’t flush it with water.</b> Take a clean cloth soaked in water and clean the wound gently but as thoroughly as possible. When the wound is clean, cover it with a clean cloth.
+    </string>
+    <string name="first_aid_7">
+        7. <b>Wait for, or go for, medical help.</b> The best you can do is find medical help as soon as possible. The good news is that once you have cleaned the wound and have removed any jewelry, if there is little or no swelling, the bite is less likely to
+        be from a venomous snake. However, even if this is the case there is still a risk of infection or a serious reaction, including allergic reactions, so you still need medical attention as soon as possible.
+    </string>
+    <string name="first_aid_8">
+        8. <b>Avoid steps that will worsen your situation.</b> There are a lot of myths about how to care for a snake bite and some of these myths could actually make your situation worse.
+        \n\t+ Don\'t try to cut or suck the venom out. Cutting the wound could cause more problems and increases the risk of infection. Anyone sucking out venom may actually swallow some and be poisoned themselves.
+        \n\t+ Don\’t use a tourniquet or use ice on the wound. Experts believe that a tourniquet could potentially restrict blood flow too much and ice can increase the damage to the wound.
+        \n\t+ Don\’t drink any alcohol or caffeine-- this can increase your heart rate and spread any venom that may be there. Instead, stay hydrated with water.
+    </string>
+    <string name="first_aid_9">
+        9. <b>Understand the medical care you should receive.</b> At the ER, you will be treated for swelling, pain and any symptoms of a venomous snake bite. These symptoms include nausea, dizziness, numbness and any difficulty breathing or swallowing.
+        The ER will also observe you for drops in blood pressure, any signs of damage to the blood or nervous system, allergic reactions, and swelling.
+        \n\t+ The treatment will depend on any symptoms you develop. If no symptoms develop, you may still be kept for a 24-hour observation period because in some cases it takes that long for symptoms to develop.
+        \n\t+ If the snake that bit you is venomous, you may get treated with antivenin (aka antivenom or antivenene). This is a combination of antibodies made to counteract snake toxins and has been shown to be safe and effective in both adults and children. Depending on symptoms, you may get more than one dose.
+        \n\t+ You will also likely be prescribed a broad-spectrum antibiotic to make sure the wound does not get infected. A tetanus shot may also be given.
+        \n\t+ For very severe snake bites, surgery may be required.
+    </string>
+    <string name="first_aid_10">
+        10. <b>Follow recommendations for continued care of the bite.</b> By the time you are released from the hospital, your main concern should be keeping the snake bite area cleaned and covered and following medical instructions for wound care.
+        These instructions should include how often to change the dressing, how to clean the healing wound (usually warm water and soap), and how to recognize a possible infection.
+        \n\t+ Signs of possible infection include swelling, tenderness, redness, drainage, and heat coming from the infected area, or a new fever. If you experience any of these symptoms at the site of the snake bite, call your physician as soon as possible.
+    </string>
+    <string name="first_aid_11">
+        11. <b>Stay calm and wait it out if you cannot reach medical care.</b> If you\'re out in the wilderness, with no hope of paramedics getting there soon, the best you can do is get as comfortable as possible and wait for the venom to leave your system.
+        In most cases, snakes don\'t inject enough venom for the bite to be fatal. Treat the individual symptoms that may occur, and most importantly, stay calm and move as little as possible. Fear of snakes and the anxiety that follows being bitten
+        are often what leads to fatalities, since a pounding heart makes the venom spread more quickly.
+        \n\t+ If you\'re out hiking and see other people, ask if they can call or go for help, or if they have a snake-bite kit of pump suction device.
+    </string>
 </resources>

@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@drawable/rattlesnake"
-             tools:context=".fragments.MainPageFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rattlesnake"
+    tools:context=".fragments.MainPageFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -13,12 +13,12 @@
         android:id="@+id/captureButton"
         android:layout_gravity="left|top"
         android:src="@drawable/capture_icon"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:padding="0dp"
-        android:background="#95b206"
+        android:background="#94ae18"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp" />
 
@@ -28,12 +28,12 @@
         android:id="@+id/mapButton"
         android:layout_gravity="right|top"
         android:padding="0dp"
-        android:background="#9db909"
+        android:background="#97b208"
         android:src="@drawable/map_icon"
         android:layout_below="@+id/listOfSnakesButton"
         android:layout_alignLeft="@+id/listOfSnakesButton"
         android:layout_alignStart="@+id/listOfSnakesButton"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="15dp"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
         android:layout_below="@+id/captureButton"
         android:layout_alignLeft="@+id/captureButton"
         android:layout_alignStart="@+id/captureButton"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="15dp"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -55,25 +55,26 @@
         android:layout_gravity="left|bottom"
         android:src="@drawable/firstaid_icon"
         android:padding="0dp"
-        android:background="#99b507"
+        android:background="#8ba906"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/mapButton"
         android:layout_alignStart="@+id/mapButton"
         android:layout_below="@+id/mapButton"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="15dp"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/helpButton"
-        android:layout_gravity="center_horizontal|top"
         android:src="@drawable/help_icon"
         android:padding="0dp"
-        android:background="#92af04"
-        android:layout_below="@+id/firstaidButton"
-        android:layout_alignLeft="@+id/firstaidButton"
-        android:layout_alignStart="@+id/firstaidButton"
-        android:layout_marginTop="20dp" />
+        android:background="#80a202"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_above="@+id/listOfSnakesButton"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_toStartOf="@+id/textView13" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -93,9 +94,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Help"
         android:id="@+id/textView13"
-        android:layout_alignBottom="@+id/helpButton"
-        android:layout_alignLeft="@+id/textView12"
-        android:layout_alignStart="@+id/textView12" />
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,8 +126,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="First Aid"
         android:id="@+id/textView17"
-        android:layout_above="@+id/helpButton"
-        android:layout_alignLeft="@+id/textView13"
-        android:layout_alignStart="@+id/textView13" />
+        android:layout_alignBottom="@+id/firstaidButton"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
 
 </RelativeLayout>

@@ -3,6 +3,7 @@ package fyp.theanh.snakealertapplication.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -20,7 +21,7 @@ import fyp.theanh.snakealertapplication.R;
 import fyp.theanh.snakealertapplication.models.Snake;
 
 
-public class DetailActivity extends ActionBarActivity {
+public class DetailActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

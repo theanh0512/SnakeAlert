@@ -79,7 +79,7 @@ public class MainActivity extends Activity implements MainPageFragment.OnFragmen
     @Override
     protected void onStart() {
         mGoogleApiClient.connect();
-        GetDataTask dataTask = new GetDataTask(this, FragmentMain.mSnakeAdapter);
+        GetDataTask dataTask = new GetDataTask(this, FragmentMain.mSnakeAdapter,FragmentMain.mAdapter);
         dataTask.execute();
         GetDataTask dataTaskForSnakeKind = new GetDataTask(this,
                 "http://www.snakealertapp.com/query_kind_table.php");
@@ -136,7 +136,7 @@ public class MainActivity extends Activity implements MainPageFragment.OnFragmen
 
     protected void createLocationRequest() {
         mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(10000);
+        mLocationRequest.setInterval(200000);
         mLocationRequest.setFastestInterval(5000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
     }
