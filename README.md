@@ -12,3 +12,5 @@ Snake Alert Application provides 4 functions:
 3. View map of snake cases reported before
 
 4. View general first aid information or call for emergency help
+
+![alt tag](https://github.com/theanh0512/SnakeAlertApplication/blob/master/main_page.png)
